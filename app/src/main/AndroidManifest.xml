@@ -16,10 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!--<activity android:name=".ResultActivity"-->
-            <!--android:label="@string/result"/>-->
-        <!--<activity android:name=".ChooseCityActivity"-->
-            <!--android:label="@string/select"/>-->
+        <activity android:name=".ResultActivity"
+            android:label="@string/result"/>
+        <activity android:name=".ChooseCityActivity"
+            android:label="@string/select"/>
     </application>
 
 </manifest>

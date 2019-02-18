@@ -107,7 +107,7 @@ public class ChooseCityActivity extends ExpandableListActivity {
         getExpandableListView().setOnChildClickListener(
                 new ExpandableListView.OnChildClickListener() {
                     @Override
-                    public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
+                    public boolean onChildClick(ExpandableListView parent, View source, int groupPosition, int childPosition, long id) {
                         //获取启动该Activity之前对应的Intent
                         Intent intent = getIntent();
                         Bundle data = new Bundle();
@@ -122,6 +122,5 @@ public class ChooseCityActivity extends ExpandableListActivity {
                 }
         );
     }
-
 
 }

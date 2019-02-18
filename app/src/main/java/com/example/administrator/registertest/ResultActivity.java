@@ -1,12 +1,14 @@
 package com.example.administrator.registertest;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+
 import android.widget.TextView;
 
-public class ResultActivity extends AppCompatActivity {
+public class ResultActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState){
+        super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
 
         TextView resultName=(TextView)findViewById(R.id.resultName);
@@ -18,7 +20,7 @@ public class ResultActivity extends AppCompatActivity {
         resultName.setText(intent.getStringExtra("name"));
         resultPsd.setText(intent.getStringExtra("psd"));
         resultGender.setText(intent.getStringExtra("gender"));
-        resultPsd.setText(intent.getStringExtra("city"));
+        resultCity.setText(intent.getStringExtra("city"));
 
     }
 }
